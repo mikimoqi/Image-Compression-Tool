@@ -53,8 +53,7 @@ QTree::QTree(PNG & imIn, int leafB, RGBAPixel frameC, bool bal)
     split(curr);
   }
 
-  /* YOUR CODE HERE */
-  
+ 
 }
 
 
@@ -70,8 +69,7 @@ QTree::QTree(PNG & imIn, int leafB, bool bal)
     q.pop();
     split(curr);
   }
-  /* YOUR CODE HERE */
-  
+ 
 }
 
 
@@ -207,8 +205,8 @@ QTree::Node * QTree::SNbr(Node *t) {
   }
     
   return NULL;
-  /* YOUR CODE HERE */
   
+
 }
 
 /* ENbr(t)
@@ -236,7 +234,7 @@ QTree::Node * QTree::ENbr(Node *t) {
   }
 
   return NULL;
-  /* YOUR CODE HERE */
+
   
 }
 
@@ -265,7 +263,7 @@ QTree::Node * QTree::WNbr(Node *t) {
     return t->parent->sw;
 
   return NULL;
-  /* YOUR CODE HERE */
+
   
 }
 
@@ -315,7 +313,7 @@ void QTree::writeLeaf(PNG& img, Node* curr){
 
 void QTree::clear() {
 
-  /* YOUR CODE HERE */
+ 
   clearNode(root);
   
 }
@@ -340,7 +338,7 @@ void QTree::copy(const QTree & orig) {
   frameColor = orig.frameColor;
   
   root = copyNode(NULL, orig.root);
-  /* YOUR CODE HERE */
+
   
 }
 
